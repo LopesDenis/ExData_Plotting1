@@ -1,6 +1,10 @@
 # Plot1 - ExData Plotting Coursera
 
 
+
+#### commom parts
+
+
 # Files 
 url       <-"https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip" 
 fileZip  <- "Data.zip"
@@ -37,8 +41,15 @@ DT$Date <- as.Date(DT$Date, format = "%d/%m/%Y")
 DT <- DT[DT$Date >= as.Date("2007-02-01") & DT$Date <= as.Date("2007-02-02"),]
 
 
+
+
+
+###  Plot 1
+
+
 # Convert column that we will use to correct class
 DT$Global_active_power <- as.numeric(DT$Global_active_power)
+
 
 
 # Graph
